@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator | JV Codes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="panel">
+    <h1>Age Calculator</h1>
+    <form onsubmit="calculateAge(event)">
+        <div class="form-group">
+            <label for="dob-month">Date of Birth:</label>
+            <div class="dob-fields">
+                <select id="dob-month" onchange="updateDays('dob-day')">
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+
+                <select id="dob-day">
+                    <!-- Days will be populated here based on selected month -->
+                </select>
+
+                <input type="number" id="dob-year" placeholder="Year" min="1900" onchange="updateDays('dob-day')" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="ageAt-month">Age as of:</label>
+            <div class="age-at-fields">
+                <select id="ageAt-month" onchange="updateDays('ageAt-day')">
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+
+                <select id="ageAt-day">
+                    <!-- Days will be populated here based on selected month -->
+                </select>
+
+                <input type="number" id="ageAt-year" placeholder="Year" min="1900" onchange="updateDays('ageAt-day')" />
+            </div>
+        </div>
+
+        <input type="submit" value="Calculate Age" />
+    </form>
+
+    <div id="result" class="result"></div>
+</div>
+</body>
+</html>

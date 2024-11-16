@@ -1,0 +1,107 @@
+/* Global Styles for Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-weight: 600;
+}
+
+/* Panel Container */
+.panel {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 8px 50px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Form Layout */
+form {
+    display: grid;
+    gap: 15px;
+}
+
+/* Form Group */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Labels */
+.form-group label {
+    font-size: 14px;
+    width: 30%;
+}
+
+/* Date of Birth and Age Fields */
+.dob-fields, .age-at-fields {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Input Fields */
+.dob-fields select, .dob-fields input[type="number"],
+.age-at-fields select, .age-at-fields input[type="number"] {
+    width: 28%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+}
+input[type="submit"]:hover {
+    background: #0056b3;
+}
+/* Result Section */
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f1f4fd;
+    border: 2px solid green;
+    border-radius: 5px;
+    color: green;
+    width: 96%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 16px;
+    overflow-y: auto;
+}
+/* Result Text */
+.result p {
+    margin: 0;
+    font-size: 16px;
+}
+/* Highlighted Age */
+.age-bold {
+    font-weight: bold;
+    color: #720340;
+}
